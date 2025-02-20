@@ -18,12 +18,12 @@
         };
 
         toch {
-            bindings = <&kp KP_COMMA>;
+            bindings = <&kp KP_N1>;
             key-positions = <16 19>;
         };
 
         ravno {
-            bindings = <&kp KP_EQUAL>;
+            bindings = <&kp KP_N4>;
             key-positions = <28 31>;
         };
 
@@ -53,7 +53,7 @@
         };
 
         dot {
-            bindings = <&kp KP_DOT>;
+            bindings = <&kp KP_N2>;
             key-positions = <15 20>;
         };
 
@@ -68,7 +68,7 @@
         };
 
         ques {
-            bindings = <&kp QUESTION>;
+            bindings = <&kp KP_N3>;
             key-positions = <14 21>;
         };
 
@@ -188,9 +188,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE  &kp EXCL   &kp AT    &kp POUND  &kp DLLR   &kp PERCENT    &kp LC(X)  &kp HOME   &kp UP    &kp END    &none   &none
+&kp TILDE  &kp EXCL   &kp AT    &kp POUND  &kp DLLR   &kp PERCENT    &kp LC(X)  &kp PG_UP  &kp UP    &kp HOME   &none   &none
 &kp GRAVE  &kp CARET  &kp AMPS  &kp STAR   &kp QMARK  &kp BSLH       &kp LC(C)  &kp LEFT   &kp DOWN  &kp RIGHT  &trans  &trans
-&kp PIPE   &kp DQT    &kp SQT   &kp COLON  &kp SEMI   &kp FSLH       &kp LC(V)  &kp PG_UP  &kp INS   &kp PG_DN  &trans  &trans
+&kp PIPE   &kp DQT    &kp SQT   &kp COLON  &kp SEMI   &kp FSLH       &kp LC(V)  &kp PG_DN  &kp INS   &kp END    &trans  &trans
                                 &none      &trans     &none          &kp RCTRL  &kp RSHFT  &kp RALT
             >;
         };
