@@ -33,12 +33,12 @@
         };
 
         dev {
-            bindings = <&kp APOSTROPHE>;
+            bindings = <&kp KP_N6>;
             key-positions = <17 18>;
         };
 
         pct {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp KP_N7>;
             key-positions = <29 30>;
         };
 
@@ -83,33 +83,13 @@
         };
 
         dotcom {
-            bindings = <&kp SEMICOLON>;
+            bindings = <&kp KP_N8>;
             key-positions = <10 1>;
         };
 
         col {
-            bindings = <&kp COLON>;
+            bindings = <&kp KP_N9>;
             key-positions = <13 22>;
-        };
-
-        lbac {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <16 15>;
-        };
-
-        rbrac {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <19 20>;
-        };
-
-        rbacfig {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <32 33>;
-        };
-
-        lbacfig {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <27 26>;
         };
 
         lscob {
@@ -120,16 +100,6 @@
         rscob {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <20 21>;
-        };
-
-        bol {
-            bindings = <&kp GREATER_THAN>;
-            key-positions = <8 9>;
-        };
-
-        men {
-            bindings = <&kp LESS_THAN>;
-            key-positions = <2 3>;
         };
     };
 
@@ -188,10 +158,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE  &kp EXCL   &kp AT    &kp POUND  &kp DLLR   &kp PERCENT    &kp LC(X)  &kp PG_UP  &kp UP    &kp HOME   &none   &none
-&kp GRAVE  &kp CARET  &kp AMPS  &kp STAR   &kp QMARK  &kp BSLH       &kp LC(C)  &kp LEFT   &kp DOWN  &kp RIGHT  &trans  &trans
-&kp PIPE   &kp DQT    &kp SQT   &kp COLON  &kp SEMI   &kp FSLH       &kp LC(V)  &kp PG_DN  &kp INS   &kp END    &trans  &trans
-                                &none      &trans     &none          &kp RCTRL  &kp RSHFT  &kp RALT
+&kp TILDE  &kp EXCL   &kp AT     &kp POUND  &kp DLLR              &kp PERCENT              &kp KP_N6  &kp PG_UP  &kp UP    &kp HOME   &kp KP_N8  &none
+&kp BSLH   &none      &kp LC(X)  &kp LC(V)  &kp LC(C)             &kp LC(A)                &kp KP_N7  &kp LEFT   &kp DOWN  &kp RIGHT  &kp KP_N9  &trans
+&none      &kp CARET  &kp AMPS   &kp STAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none      &kp PG_DN  &kp INS   &kp END    &trans     &trans
+                                 &none      &trans                &none                    &kp RCTRL  &kp RSHFT  &kp RALT
             >;
         };
 
@@ -203,10 +173,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp STAR     &kp N0          &kp N1  &kp N2  &kp N3     &kp PLUS     &none      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none  &none
-&none        &kp FSLH        &kp N4  &kp N5  &kp N6     &kp EQUAL    &kp UNDER  &kp BSPC              &kp DEL                &none  &none  &none
-&kp PERCENT  &kp UNDERSCORE  &kp N7  &kp N8  &kp N9     &kp MINUS    &none      &kp LBKT              &kp RBKT               &none  &none  &none
-                                     &none   &kp LSHFT  &kp LCTRL    &none      &trans                &none
+&kp STAR     &kp N0          &kp N1  &kp N2  &kp N3     &kp PLUS     &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none  &none
+&kp BSLH     &kp FSLH        &kp N4  &kp N5  &kp N6     &kp EQUAL    &none  &kp LBKT              &kp RBKT               &none  &none  &none
+&kp PERCENT  &kp UNDERSCORE  &kp N7  &kp N8  &kp N9     &kp MINUS    &none  &kp LS(LT)            &kp LS(GT)             &none  &none  &none
+                                     &none   &kp LSHFT  &kp LCTRL    &none  &trans                &none
             >;
         };
 
