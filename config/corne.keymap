@@ -12,34 +12,9 @@
     combos {
         compatible = "zmk,combos";
 
-        zvezd {
-            bindings = <&kp ASTERISK>;
-            key-positions = <4 7>;
-        };
-
         toch {
             bindings = <&kp KP_N1>;
             key-positions = <16 19>;
-        };
-
-        ravno {
-            bindings = <&kp KP_N4>;
-            key-positions = <28 31>;
-        };
-
-        mult {
-            bindings = <&kp UNDER>;
-            key-positions = <5 6>;
-        };
-
-        dev {
-            bindings = <&kp KP_N6>;
-            key-positions = <17 18>;
-        };
-
-        pct {
-            bindings = <&kp KP_N7>;
-            key-positions = <29 30>;
         };
 
         lay3 {
@@ -47,24 +22,9 @@
             key-positions = <10 11>;
         };
 
-        slash {
-            bindings = <&kp KP_DIVIDE>;
-            key-positions = <3 8>;
-        };
-
         dot {
             bindings = <&kp KP_N2>;
             key-positions = <15 20>;
-        };
-
-        plus {
-            bindings = <&kp KP_PLUS>;
-            key-positions = <27 32>;
-        };
-
-        ost {
-            bindings = <&kp PERCENT>;
-            key-positions = <2 9>;
         };
 
         ques {
@@ -72,34 +32,9 @@
             key-positions = <14 21>;
         };
 
-        min {
-            bindings = <&kp KP_MINUS>;
-            key-positions = <26 33>;
-        };
-
         altshift {
             bindings = <&kp LA(LEFT_SHIFT)>;
             key-positions = <38 39>;
-        };
-
-        dotcom {
-            bindings = <&kp KP_N8>;
-            key-positions = <10 1>;
-        };
-
-        col {
-            bindings = <&kp KP_N9>;
-            key-positions = <13 22>;
-        };
-
-        lscob {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <14 15>;
-        };
-
-        rscob {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <20 21>;
         };
     };
 
@@ -158,10 +93,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE  &kp EXCL   &kp AT     &kp POUND  &kp DLLR              &kp PERCENT              &kp KP_N6  &kp PG_UP  &kp UP    &kp HOME   &kp KP_N8  &none
-&kp BSLH   &none      &kp LC(X)  &kp LC(V)  &kp LC(C)             &kp LC(A)                &kp KP_N7  &kp LEFT   &kp DOWN  &kp RIGHT  &kp KP_N9  &trans
-&none      &kp CARET  &kp AMPS   &kp STAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none      &kp PG_DN  &kp INS   &kp END    &trans     &trans
-                                 &none      &trans                &none                    &kp RCTRL  &kp RSHFT  &kp RALT
+&kp TILDE  &kp EXCL   &kp AT     &kp POUND  &kp DLLR              &kp PERCENT              &kp LEFT_BRACKET  &kp PG_UP  &kp UP    &kp HOME   &kp RIGHT_BRACKET  &none
+&kp BSLH   &none      &kp LC(X)  &kp LC(V)  &kp LC(C)             &kp LC(A)                &kp LPAR          &kp LEFT   &kp DOWN  &kp RIGHT  &kp RPAR           &trans
+&none      &kp CARET  &kp AMPS   &kp STAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LESS_THAN     &kp PG_DN  &kp INS   &kp END    &kp GREATER_THAN   &trans
+                                 &none      &trans                &none                    &kp RCTRL         &kp RSHFT  &kp RALT
             >;
         };
 
@@ -173,17 +108,17 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp STAR     &kp N0          &kp N1  &kp N2  &kp N3     &kp PLUS     &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none  &none
-&kp BSLH     &kp FSLH        &kp N4  &kp N5  &kp N6     &kp EQUAL    &none  &kp LBKT              &kp RBKT               &none  &none  &none
-&kp PERCENT  &kp UNDERSCORE  &kp N7  &kp N8  &kp N9     &kp MINUS    &none  &kp LS(LT)            &kp LS(GT)             &none  &none  &none
-                                     &none   &kp LSHFT  &kp LCTRL    &none  &trans                &none
+&none  &kp ASTRK     &kp N1  &kp N2  &kp N3     &kp PLUS     &none  &kp KP_N8  &kp KP_N9      &none        &none  &none
+&none  &kp KP_N5     &kp N4  &kp N5  &kp N6     &kp MINUS    &none  &kp KP_N7  &kp KP_N6      &kp PERCENT  &none  &none
+&none  &kp NUMBER_0  &kp N7  &kp N8  &kp N9     &kp KP_N4    &none  &kp UNDER  &kp BACKSLASH  &none        &none  &none
+                             &none   &kp LSHFT  &kp LCTRL    &none  &trans     &none
             >;
         };
 
         layer_3 {
             bindings = <
 &none       &none         &none         &none         &none         &none           &none   &none   &none   &none    &none    &none
-&none       &none         &kp LCTRL     &kp LALT      &kp LSHFT     &none           &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
+&none       &none         &kp LCTRL     &kp LALT      &kp LSHFT     &kp DEL         &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
                                         &none         &trans        &none           &none   &trans  &none
             >;
