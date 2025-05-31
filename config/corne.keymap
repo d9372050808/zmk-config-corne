@@ -93,10 +93,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC    &kp LBKT                        &kp HOME                  &kp UP_ARROW                &kp PG_UP         &kp RBKT                 &kp LEFT_BRACKET  &kp PG_UP  &kp UP         &kp HOME   &kp RIGHT_BRACKET  &none
-&kp LSHFT  &hrm LEFT_WIN LEFT_PARENTHESIS  &hrm LEFT_ALT LEFT_ARROW  &hrm LEFT_SHIFT DOWN_ARROW  &hrm LCTRL RIGHT  &kp RIGHT_PARENTHESIS    &kp LPAR          &kp LEFT   &kp DOWN       &kp RIGHT  &kp RPAR           &trans
-&kp LCTRL  &kp LESS_THAN                   &kp END                   &kp INS                     &kp PG_DN         &kp GREATER_THAN         &kp LESS_THAN     &kp PG_DN  &kp INS        &kp END    &kp GREATER_THAN   &trans
-                                                                     &kp DEL                     &to 0             &kp ENTER                &kp SPACE         &to 2      &kp BACKSPACE
+&kp ESC    &kp LBKT                        &kp HOME                  &kp UP_ARROW                &kp PG_UP         &kp RBKT                 &kp SPACE  &kp SPACE     &kp SPACE           &kp SPACE     &kp SPACE    &none
+&kp LSHFT  &hrm LEFT_WIN LEFT_PARENTHESIS  &hrm LEFT_ALT LEFT_ARROW  &hrm LEFT_SHIFT DOWN_ARROW  &hrm LCTRL RIGHT  &kp RIGHT_PARENTHESIS    &kp SPACE  &hrm RCTRL A  &hrm RIGHT_SHIFT A  &hrm RIGHT A  &hrm RWIN A  &trans
+&kp LCTRL  &kp LESS_THAN                   &kp END                   &kp INS                     &kp PG_DN         &kp GREATER_THAN         &kp SPACE  &kp SPACE     &kp SPACE           &kp SPACE     &kp SPACE    &trans
+                                                                     &kp DEL                     &to 0             &kp ENTER                &kp SPACE  &to 2         &kp BACKSPACE
             >;
         };
 
@@ -108,10 +108,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp LS(EXCL)  &kp N1  &kp N2   &kp N3  &kp PLUS     &none      &kp KP_N8  &kp KP_N9      &none   &none   &none
-&none  &kp N1        &kp N2  &kp N3   &kp N4  &kp N5       &kp N6     &kp N7     &kp N8         &kp N9  &kp N0  &none
-&none  &kp NUMBER_0  &kp N7  &kp N8   &kp N9  &kp KP_N4    &none      &kp UNDER  &kp BACKSLASH  &none   &none   &none
-                             &kp DEL  &to 1   &kp RET      &kp SPACE  &to 0      &kp BSPC
+&none  &kp SPACE         &kp SPACE               &kp SPACE                 &kp SPACE            &kp SPACE    &kp SPACE  &kp SPACE      &kp SPACE            &none              &none              &none
+&none  &hrm N1 LEFT_WIN  &hrm LEFT_ALT NUMBER_2  &hrm LEFT_SHIFT NUMBER_3  &hrm LCTRL NUMBER_4  &kp N5       &kp N6     &hrm RCTRL N7  &hrm RIGHT_SHIFT N8  &hrm RIGHT_ALT N9  &hrm RIGHT_WIN N0  &none
+&none  &kp SPACE         &kp SPACE               &kp SPACE                 &kp SPACE            &kp SPACE    &kp SPACE  &kp SPACE      &kp SPACE            &none              &none              &none
+                                                 &kp DEL                   &to 1                &kp RET      &kp SPACE  &to 0          &kp BSPC
             >;
         };
 
