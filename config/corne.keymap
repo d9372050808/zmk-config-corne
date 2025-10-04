@@ -93,9 +93,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC    &kp LBKT                        &kp HOME                  &kp UP_ARROW                &kp PG_UP         &kp RBKT                 &kp SPACE  &kp SPACE     &kp SPACE           &kp SPACE     &kp SPACE    &none
-&kp TAB    &hrm LEFT_WIN LEFT_PARENTHESIS  &hrm LEFT_ALT LEFT_ARROW  &hrm LEFT_SHIFT DOWN_ARROW  &hrm LCTRL RIGHT  &kp RIGHT_PARENTHESIS    &kp SPACE  &hrm RCTRL A  &hrm RIGHT_SHIFT A  &hrm RIGHT A  &hrm RWIN A  &trans
-&kp GRAVE  &kp LESS_THAN                   &kp END                   &kp INS                     &kp PG_DN         &kp GREATER_THAN         &kp SPACE  &kp SPACE     &kp SPACE           &kp SPACE     &kp SPACE    &trans
+&kp ESC    &kp LBKT                        &kp HOME                  &kp UP_ARROW                &kp PG_UP         &kp RBKT                 &none      &none         &none               &none         &none        &none
+&kp TAB    &hrm LEFT_WIN LEFT_PARENTHESIS  &hrm LEFT_ALT LEFT_ARROW  &hrm LEFT_SHIFT DOWN_ARROW  &hrm LCTRL RIGHT  &kp RIGHT_PARENTHESIS    &none      &hrm RCTRL A  &hrm RIGHT_SHIFT A  &hrm RIGHT A  &hrm RWIN A  &none
+&kp GRAVE  &kp LESS_THAN                   &kp END                   &kp INS                     &kp PG_DN         &kp GREATER_THAN         &none      &none         &none               &none         &none        &none
                                                                      &kp DEL                     &to 0             &kp ENTER                &kp SPACE  &to 2         &kp BACKSPACE
             >;
         };
@@ -108,10 +108,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &kp SPACE               &kp SPACE               &kp SPACE                 &kp SPACE            &kp SPACE    &kp SPACE  &kp SPACE      &kp SPACE            &kp MINUS          &kp EQUAL          &kp BSLH
-&kp TAB     &hrm LEFT_WIN NUMBER_1  &hrm LEFT_ALT NUMBER_2  &hrm LEFT_SHIFT NUMBER_3  &hrm LCTRL NUMBER_4  &kp N5       &kp N6     &hrm RCTRL N7  &hrm RIGHT_SHIFT N8  &hrm RIGHT_ALT N9  &hrm RIGHT_WIN N0  &none
-&kp GRAVE   &kp SPACE               &kp SPACE               &kp SPACE                 &kp SPACE            &kp SPACE    &none      &kp SPACE      &kp SPACE            &none              &none              &none
-                                                            &kp DEL                   &to 1                &kp RET      &kp SPACE  &to 0          &kp BSPC
+&kp ESCAPE  &none                   &none                   &none                     &none                &none      &none      &none          &none                &kp MINUS          &kp EQUAL          &kp BSLH
+&kp TAB     &hrm LEFT_WIN NUMBER_1  &hrm LEFT_ALT NUMBER_2  &hrm LEFT_SHIFT NUMBER_3  &hrm LCTRL NUMBER_4  &kp N5     &kp N6     &hrm RCTRL N7  &hrm RIGHT_SHIFT N8  &hrm RIGHT_ALT N9  &hrm RIGHT_WIN N0  &none
+&kp GRAVE   &none                   &none                   &none                     &none                &none      &none      &none          &none                &none              &none              &none
+                                                            &kp DEL                   &to 1                &kp RET    &kp SPACE  &to 0          &kp BSPC
             >;
         };
 
